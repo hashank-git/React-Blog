@@ -5,6 +5,7 @@ function Student(props) {
     return (
         <div>
             <h1> Welcome {props.firstname}</h1>
+            <h1> Welcome {props.firstname}</h1>
         </div>
     )
 }
