@@ -5,7 +5,7 @@ import Nav from './components/Nav'
 import Home from './Pages/Home'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
-import Services from './Pages/Services'
+import Author from './Pages/Author'
 function App() {
 
                                   //const [name, setName] = useState("Hashan");
@@ -24,15 +24,24 @@ function App() {
     
 
     <div>
-      <BrowserRouter>
-      <Nav />
-      <div className="container">
-      <Route exact path="/Home" component={Home} />
-      <Route path="/About" component={About} />
-      <Route path="/Contact" component={Contact} />
-      <Route path="/Services" component={Services} />
-      </div>
-      </BrowserRouter>
+        <BrowserRouter>
+          <Nav/>
+          <div className="container">
+            <Route exact path="/"   component={Home} />
+            <Route path="/about"    component={About} />
+            <Route path="/Contact"  component={Contact} />
+            <Route path="/author"   component={Author} />
+          </div>  
+        </BrowserRouter>
+                                {/* <BrowserRouter>
+                                <Nav />
+                                <div className="container">
+                                <Route exact path="/Home" component={Home} />
+                                <Route path="/About" component={About} />
+                                <Route path="/Contact" component={Contact} />
+                                <Route path="/Services" component={Services} />
+                                </div>
+                                </BrowserRouter> */}
 
                                 {/* <h1>Fetch Data In React</h1>
 

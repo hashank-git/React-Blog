@@ -4,34 +4,21 @@ import { Route, Link } from "react-router-dom";
 function Nav() {
     return (
         <div>
-         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <a className="navbar-brand" href="#">Navbar</a>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-
-  <div className="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul className="navbar-nav mr-auto">
-      <li className="nav-item active">
-        <Link className="nav-link" to="/Home">Home</Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link" to="About">About</Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link" to="Contact">Contact</Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link" to="Services">Services</Link>
-      </li>
-     
-    </ul>
-    <form className="form-inline my-2 my-lg-0">
-      <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-      <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+         <nav className="main-nav overlay clearfix">
+          <Link className="blog-logo" to="index.html"><img src="assets/img/logo.png" alt="Fashion Critiques"/></Link>
+          <ul id="menu">
+            <li className="nav-home nav-current" role="presentation"><Link to="/">Home</Link></li>
+            <li className="nav-article-example" role="presentation"><Link to="/about">About</Link></li>
+            <li className="nav-about-us" role="presentation"><Link to="/author">Author</Link></li>
+            <li className="nav-author-page" role="presentation"><Link to="author.html">Author Page</Link></li>
+            <span className="socialheader">
+            <Link to="#"><span class='symbol'>circletwitterbird</span></Link>
+            <Link to="#"><span class='symbol'>circlefacebook</span></Link>
+            <Link to="#"><span class='symbol'>circlegoogleplus</span></Link>
+            <Link to="mailto:wowthemesnet@gmail.com"><span class='symbol'>circleemail</span></Link>
+            </span>
+          </ul>
+          </nav>
         </div>
     )
 }

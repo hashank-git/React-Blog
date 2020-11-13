@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Services() {
+function Author() {
     return (
         <div>
-            <h2>Services</h2>
+            <h2>Author</h2>
         </div>
     )
 }
 
-export default Services
+export default Author
